@@ -1,3 +1,5 @@
+function newItem(){
+
 let list = $('#list');
 let li = $('<li></li>');
 let inputValue = $('#input').val();
@@ -18,6 +20,9 @@ li.on('dblclick', function() {
 
 //Part 3
 
+
+
+//3. Adding a delete button  
 let crossOutButton = $('<crossOutButton></crossOutButton>');
 crossOutButton.append(document.createTextNode("X"));
 li.append(crossOutButton);
@@ -28,6 +33,6 @@ crossOutButton.on('click', function(){
 //Part 4
 list.sortable();
 
-
+}
 
 
